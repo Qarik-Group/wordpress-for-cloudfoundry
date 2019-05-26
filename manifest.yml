@@ -10,3 +10,8 @@ applications:
   path: wordpress
   services:
   - wp-mysql-db
+  env:
+    S3_UPLOADS_BUCKET: ((s3_uploads_bucket))
+    S3_UPLOADS_KEY: ((s3_uploads_key))
+    S3_UPLOADS_SECRET: ((s3_uploads_secret))
+    S3_UPLOADS_REGION: ((s3_uploads_region))

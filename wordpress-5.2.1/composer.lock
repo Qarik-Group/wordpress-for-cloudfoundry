@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "067406d168bf3ae4f93ac016664fe2ba",
+    "content-hash": "b66d3776593aaad25bfbb384f0d0c3ef",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -394,16 +394,16 @@
         },
         {
             "name": "humanmade/s3-uploads",
-            "version": "2.1.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/humanmade/S3-Uploads.git",
-                "reference": "f17559cba87e0a0a0191a747f62c74dbde60208d"
+                "reference": "70d50a23b2665a02abd410647c887306decfe940"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/S3-Uploads/zipball/f17559cba87e0a0a0191a747f62c74dbde60208d",
-                "reference": "f17559cba87e0a0a0191a747f62c74dbde60208d",
+                "url": "https://api.github.com/repos/humanmade/S3-Uploads/zipball/70d50a23b2665a02abd410647c887306decfe940",
+                "reference": "70d50a23b2665a02abd410647c887306decfe940",
                 "shasum": ""
             },
             "require": {
@@ -427,7 +427,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2019-04-16T05:09:44+00:00"
+            "time": "2018-03-13T15:10:11+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
