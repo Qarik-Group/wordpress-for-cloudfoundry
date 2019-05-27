@@ -18,6 +18,13 @@
  * @package WordPress
  */
 
+define( 'DISALLOW_FILE_EDIT', true );
+define( 'DISALLOW_FILE_MODS', true );
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
+define( 'WP_AUTO_UPDATE_CORE', false );
+
+define( 'FORCE_SSL_ADMIN', true );
+
 // ** MySQL settings - Use pancake_buildpack to get these from mysql service instance ** //
 define( 'DB_NAME', $_ENV["MYSQL_NAME"]);
 define( 'DB_USER', $_ENV["MYSQL_USERNAME"]);
