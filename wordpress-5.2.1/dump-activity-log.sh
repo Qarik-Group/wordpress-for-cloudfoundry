@@ -5,11 +5,11 @@ set -eu
 : ${VCAP_APPLICATION:?required}
 application_uri=$(echo "$VCAP_APPLICATION" | jq -r ".application_uris[0]")
 
-: ${WP_ADMIN_USER:?required for $application_uri}
+: ${WP_ADMIN_USER_EMAIL:?required for $application_uri}
 : ${WP_ADMIN_PASSWORD:?required for $application_uri}
 
-echo "Login to https://${application_uri} as ${WP_ADMIN_USER}..."
-curl -d "log=${WP_ADMIN_USER}&pwd=${WP_ADMIN_PASSWORD}&rememberme=forever" -c cookie.txt -k "https://wp.dev.cfdev.sh/wp-login.php"
+echo "Login to https://${application_uri} as ${WP_ADMIN_USER_EMAIL}..."
+curl -d "log=${WP_ADMIN_USER_EMAIL}&pwd=${WP_ADMIN_PASSWORD}&rememberme=forever" -c cookie.txt -k "https://wp.dev.cfdev.sh/wp-login.php"
 echo "Start fetch of activity log..."
 aal_actions_nonce=$(curl -sS --cookie cookie.txt -k "https://${application_uri}/wp-admin/admin.php?page=activity_log_page" | grep 'name="aal_actions_nonce" value="' | sed 's/.*name="aal_actions_nonce" value=[^"]*"\([^"]*\).*/\1/')
 
