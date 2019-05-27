@@ -5,8 +5,8 @@ applications:
   memory: 256M
   stack: cflinuxfs3
   buildpacks:
-  - https://github.com/starkandwayne/pancake-buildpack
-  - https://github.com/starkandwayne/wpcli-buildpack
+  - pancake_buildpack
+  - wpcli_buildpack
   - php_buildpack
   path: wordpress
   services:
