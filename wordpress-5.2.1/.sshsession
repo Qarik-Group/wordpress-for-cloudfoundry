@@ -4,5 +4,3 @@ if [[ ! -f wp-cli.phar ]]; then
   curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 fi
 alias wp="php wp-cli.phar --path=$HOME/htdocs"
-
-wp s3-uploads verify
