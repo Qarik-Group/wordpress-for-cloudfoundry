@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu
+
 : ${VCAP_APPLICATION:?required}
 application_uri=$(echo "$VCAP_APPLICATION" | jq -r ".application_uris[0]")
 

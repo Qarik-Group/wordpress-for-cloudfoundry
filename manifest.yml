@@ -15,3 +15,5 @@ applications:
     S3_UPLOADS_KEY: ((s3_uploads_key))
     S3_UPLOADS_SECRET: ((s3_uploads_secret))
     S3_UPLOADS_REGION: ((s3_uploads_region))
+    WP_ADMIN_USER: ((wp_admin_user))
+    WP_ADMIN_PASSWORD: ((wp_admin_password))
