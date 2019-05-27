@@ -18,17 +18,10 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
+// ** MySQL settings - Use pancake_buildpack to get these from mysql service instance ** //
 define( 'DB_NAME', $_ENV["MYSQL_NAME"]);
-
-/** MySQL database username */
 define( 'DB_USER', $_ENV["MYSQL_USERNAME"]);
-
-/** MySQL database password */
 define( 'DB_PASSWORD', $_ENV["MYSQL_PASSWORD"]);
-
-/** MySQL hostname */
 define( 'DB_HOST', $_ENV["MYSQL_HOSTNAME"]);
 
 /** Database Charset to use in creating database tables. */
@@ -36,6 +29,12 @@ define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
+
+// ** https://github.com/humanmade/S3-Uploads config ** //
+define( 'S3_UPLOADS_BUCKET', $_ENV['S3_UPLOADS_BUCKET']);
+define( 'S3_UPLOADS_KEY', $_ENV['S3_UPLOADS_KEY']);
+define( 'S3_UPLOADS_SECRET', $_ENV['S3_UPLOADS_SECRET']);
+define( 'S3_UPLOADS_REGION', $_ENV['S3_UPLOADS_REGION']);
 
 /**#@+
  * Authentication Unique Keys and Salts.
